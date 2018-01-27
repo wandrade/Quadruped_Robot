@@ -33,6 +33,12 @@
             <uri>model://jebediah/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <link name='Coxa_4'>
@@ -66,6 +72,12 @@
             <uri>model://jebediah/meshes/Coxa_4.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Serv_Coxa_4' type='revolute'>
@@ -117,6 +129,12 @@
             <uri>model://jebediah/meshes/Femur_4.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_4_1' type='revolute'>
@@ -168,6 +186,12 @@
             <uri>model://jebediah/meshes/Tibia_4.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_4_2' type='revolute'>
@@ -219,6 +243,12 @@
             <uri>model://jebediah/meshes/Coxa_1.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Coxa_1' type='revolute'>
@@ -270,6 +300,12 @@
             <uri>model://jebediah/meshes/Femur_1.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_1_1' type='revolute'>
@@ -321,6 +357,12 @@
             <uri>model://jebediah/meshes/Tibia_1.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_1_2' type='revolute'>
@@ -372,6 +414,12 @@
             <uri>model://jebediah/meshes/Coxa_2.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Coxa_2' type='revolute'>
@@ -423,6 +471,12 @@
             <uri>model://jebediah/meshes/Femur_2.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_2_1' type='revolute'>
@@ -474,6 +528,12 @@
             <uri>model://jebediah/meshes/Tibia_2.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_2_2' type='revolute'>
@@ -525,6 +585,12 @@
             <uri>model://jebediah/meshes/Coxa_3.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Coxa_3' type='revolute'>
@@ -576,6 +642,12 @@
             <uri>model://jebediah/meshes/Femur.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_3_1' type='revolute'>
@@ -627,6 +699,12 @@
             <uri>model://jebediah/meshes/Tibia_3.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0.1 0.1 0.1 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_3_2' type='revolute'>
