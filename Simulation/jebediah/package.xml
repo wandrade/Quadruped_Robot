@@ -4,8 +4,7 @@
   <description>
     <p>URDF Description package for jebediah</p>
     <p>This package contains configuration data, 3D models and launch files
-for jebediah robot.</p>
-    <p> It was created based on Toglefritz Jebediah quadruped found on https://github.com/Toglefritz/Quadruped_Robot.</p>
+for jebediah robot</p>
   </description>
   <author>Werner Thomassen Andrade</author>
   <maintainer email="wandrade@ufmg.br" />

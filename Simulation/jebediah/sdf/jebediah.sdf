@@ -3,15 +3,15 @@
     <link name='base_link'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose frame=''>0 0 1 0 -0 0</pose>
-        <mass>0.29736</mass>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.297355</mass>
         <inertia>
-          <ixx>0.0010233</ixx>
-          <ixy>-1.0923e-06</ixy>
-          <ixz>-1.7045e-05</ixz>
-          <iyy>0.0011258</iyy>
-          <iyz>-2.2663e-07</iyz>
-          <izz>0.0014767</izz>
+          <ixx>0.00102328</ixx>
+          <ixy>-1.09233e-06</ixy>
+          <ixz>-1.70446e-05</ixz>
+          <iyy>0.00112582</iyy>
+          <iyz>-2.26629e-07</iyz>
+          <izz>0.00147666</izz>
         </inertia>
       </inertial>
       <collision name='base_link_collision'>
@@ -34,17 +34,17 @@
       </visual>
     </link>
     <link name='Coxa_4'>
-      <pose frame=''>-0.085591 -0.080462 -0.005163 0 0 -2.3554</pose>
+      <pose frame=''>-0.075112 -0.069996 -0.034543 0 0 -2.3554</pose>
       <inertial>
-        <pose frame=''>-0 0 -0 0 -0 0</pose>
-        <mass>0.1241</mass>
+        <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
+        <mass>0.124104</mass>
         <inertia>
-          <ixx>8.1827e-05</ixx>
-          <ixy>-1.1432e-08</ixy>
+          <ixx>8.18267e-05</ixx>
+          <ixy>-1.14318e-08</ixy>
           <ixz>6.1428e-07</ixz>
-          <iyy>7.2703e-05</iyy>
-          <iyz>2.0053e-08</iyz>
-          <izz>0.00012069</izz>
+          <iyy>7.27029e-05</iyy>
+          <iyz>2.00528e-08</iyz>
+          <izz>0.000120694</izz>
         </inertia>
       </inertial>
       <collision name='Coxa_4_collision'>
@@ -72,8 +72,8 @@
       <axis>
         <xyz>-0 -0 1</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -85,17 +85,17 @@
       </axis>
     </joint>
     <link name='Femur_4'>
-      <pose frame=''>-0.158245 -0.151098 -0.005527 0 0 -2.3554</pose>
+      <pose frame=''>-0.140912 -0.095678 -0.005543 0 0 -2.3554</pose>
       <inertial>
-        <pose frame=''>-0 0 0 0 -0 0</pose>
-        <mass>0.15818</mass>
+        <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
+        <mass>0.158176</mass>
         <inertia>
-          <ixx>8.7287e-05</ixx>
-          <ixy>1.3518e-10</ixy>
-          <ixz>-6.329e-12</ixz>
-          <iyy>0.00025193</iyy>
-          <iyz>-3.8498e-08</iyz>
-          <izz>0.00032491</izz>
+          <ixx>8.72873e-05</ixx>
+          <ixy>1.35179e-10</ixy>
+          <ixz>-6.32899e-12</ixz>
+          <iyy>0.000251934</iyy>
+          <iyz>-3.84978e-08</iyz>
+          <izz>0.000324907</izz>
         </inertia>
       </inertial>
       <collision name='Femur_4_collision'>
@@ -123,8 +123,8 @@
       <axis>
         <xyz>0.707668 -0.706545 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -136,17 +136,17 @@
       </axis>
     </joint>
     <link name='Tibia_4'>
-      <pose frame=''>-0.206124 -0.201167 -0.053857 0 0 -2.3554</pose>
+      <pose frame=''>-0.193532 -0.188605 -0.005543 0 0 -2.3554</pose>
       <inertial>
-        <pose frame=''>-0 -0 1e-06 0 -0 0</pose>
-        <mass>0.17087</mass>
+        <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
+        <mass>0.170868</mass>
         <inertia>
-          <ixx>0.00058938</ixx>
-          <ixy>3.6775e-09</ixy>
-          <ixz>-6.3001e-05</ixz>
-          <iyy>0.00054103</iyy>
-          <iyz>-9.2362e-09</iyz>
-          <izz>8.2462e-05</izz>
+          <ixx>0.000589379</ixx>
+          <ixy>3.67753e-09</ixy>
+          <ixz>-6.30008e-05</ixz>
+          <iyy>0.000541032</iyy>
+          <iyz>-9.23625e-09</iyz>
+          <izz>8.24623e-05</izz>
         </inertia>
       </inertial>
       <collision name='Tibia_4_collision'>
@@ -174,8 +174,8 @@
       <axis>
         <xyz>0.707668 -0.706545 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -187,17 +187,17 @@
       </axis>
     </joint>
     <link name='Coxa_1'>
-      <pose frame=''>0.075353 -0.080475 -0.005163 0 -0 -0.78456</pose>
+      <pose frame=''>0.064888 -0.069996 -0.034543 0 -0 -0.78456</pose>
       <inertial>
-        <pose frame=''>-0 0 -0 0 -0 0</pose>
-        <mass>0.1241</mass>
+        <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
+        <mass>0.124104</mass>
         <inertia>
-          <ixx>8.1827e-05</ixx>
-          <ixy>-1.1432e-08</ixy>
+          <ixx>8.18267e-05</ixx>
+          <ixy>-1.14316e-08</ixy>
           <ixz>6.1428e-07</ixz>
-          <iyy>7.2703e-05</iyy>
-          <iyz>2.0053e-08</iyz>
-          <izz>0.00012069</izz>
+          <iyy>7.27029e-05</iyy>
+          <iyz>2.00528e-08</iyz>
+          <izz>0.000120694</izz>
         </inertia>
       </inertial>
       <collision name='Coxa_1_collision'>
@@ -225,8 +225,8 @@
       <axis>
         <xyz>-0 0 1</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -238,17 +238,17 @@
       </axis>
     </joint>
     <link name='Femur_1'>
-      <pose frame=''>0.145992 -0.153126 -0.005527 0 -0 -0.78456</pose>
+      <pose frame=''>0.090573 -0.135795 -0.005543 0 -0 -0.78456</pose>
       <inertial>
-        <pose frame=''>-0 0 0 0 -0 0</pose>
-        <mass>0.15818</mass>
+        <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
+        <mass>0.158176</mass>
         <inertia>
-          <ixx>8.7287e-05</ixx>
-          <ixy>1.3518e-10</ixy>
-          <ixz>-6.3279e-12</ixz>
-          <iyy>0.00025193</iyy>
-          <iyz>-3.8498e-08</iyz>
-          <izz>0.00032491</izz>
+          <ixx>8.72873e-05</ixx>
+          <ixy>1.35181e-10</ixy>
+          <ixz>-6.32792e-12</ixz>
+          <iyy>0.000251934</iyy>
+          <iyz>-3.84978e-08</iyz>
+          <izz>0.000324907</izz>
         </inertia>
       </inertial>
       <collision name='Femur_1_collision'>
@@ -276,8 +276,8 @@
       <axis>
         <xyz>0.706514 0.707699 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -289,17 +289,17 @@
       </axis>
     </joint>
     <link name='Tibia_1'>
-      <pose frame=''>0.196063 -0.201003 -0.053857 0 -0 -0.78456</pose>
+      <pose frame=''>0.183502 -0.188411 -0.005543 0 -0 -0.78456</pose>
       <inertial>
-        <pose frame=''>-0 -0 1e-06 0 -0 0</pose>
-        <mass>0.17087</mass>
+        <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
+        <mass>0.170868</mass>
         <inertia>
-          <ixx>0.00058938</ixx>
-          <ixy>3.6775e-09</ixy>
-          <ixz>-6.3001e-05</ixz>
-          <iyy>0.00054103</iyy>
-          <iyz>-9.2362e-09</iyz>
-          <izz>8.2462e-05</izz>
+          <ixx>0.000589379</ixx>
+          <ixy>3.67753e-09</ixy>
+          <ixz>-6.30008e-05</ixz>
+          <iyy>0.000541032</iyy>
+          <iyz>-9.23621e-09</iyz>
+          <izz>8.24623e-05</izz>
         </inertia>
       </inertial>
       <collision name='Tibia_1_collision'>
@@ -327,8 +327,8 @@
       <axis>
         <xyz>0.706514 0.707699 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -340,17 +340,17 @@
       </axis>
     </joint>
     <link name='Coxa_2'>
-      <pose frame=''>0.075367 0.08047 -0.005163 -0 -0 0.78623</pose>
+      <pose frame=''>0.064888 0.070004 -0.034543 -0 -0 0.78623</pose>
       <inertial>
-        <pose frame=''>-0 0 -0 0 -0 0</pose>
-        <mass>0.1241</mass>
+        <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
+        <mass>0.124104</mass>
         <inertia>
-          <ixx>8.1827e-05</ixx>
-          <ixy>-1.1432e-08</ixy>
+          <ixx>8.18267e-05</ixx>
+          <ixy>-1.14316e-08</ixy>
           <ixz>6.1428e-07</ixz>
-          <iyy>7.2703e-05</iyy>
-          <iyz>2.0053e-08</iyz>
-          <izz>0.00012069</izz>
+          <iyy>7.27029e-05</iyy>
+          <iyz>2.00528e-08</iyz>
+          <izz>0.000120694</izz>
         </inertia>
       </inertial>
       <collision name='Coxa_2_collision'>
@@ -378,8 +378,8 @@
       <axis>
         <xyz>-0 0 1</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -391,17 +391,17 @@
       </axis>
     </joint>
     <link name='Femur_2'>
-      <pose frame=''>0.148018 0.151109 -0.005527 -0 -0 0.78623</pose>
+      <pose frame=''>0.130687 0.095689 -0.005543 -0 -0 0.78623</pose>
       <inertial>
-        <pose frame=''>-0 0 0 0 -0 0</pose>
-        <mass>0.15818</mass>
+        <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
+        <mass>0.158176</mass>
         <inertia>
-          <ixx>8.7287e-05</ixx>
-          <ixy>1.3518e-10</ixy>
-          <ixz>-6.3284e-12</ixz>
-          <iyy>0.00025193</iyy>
-          <iyz>-3.8498e-08</iyz>
-          <izz>0.00032491</izz>
+          <ixx>8.72873e-05</ixx>
+          <ixy>1.35178e-10</ixy>
+          <ixz>-6.32836e-12</ixz>
+          <iyy>0.000251934</iyy>
+          <iyz>-3.84978e-08</iyz>
+          <izz>0.000324907</izz>
         </inertia>
       </inertial>
       <collision name='Femur_2_collision'>
@@ -427,10 +427,10 @@
       <child>Femur_2</child>
       <parent>Coxa_2</parent>
       <axis>
-        <xyz>-0.707695 0.706518 -0</xyz>
+        <xyz>0.707695 -0.706518 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -442,17 +442,17 @@
       </axis>
     </joint>
     <link name='Tibia_2'>
-      <pose frame=''>0.195896 0.201179 -0.053857 -0 -0 0.78623</pose>
+      <pose frame=''>0.183304 0.188617 -0.005543 -0 -0 0.78623</pose>
       <inertial>
-        <pose frame=''>-0 -0 1e-06 0 -0 0</pose>
-        <mass>0.17087</mass>
+        <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
+        <mass>0.170868</mass>
         <inertia>
-          <ixx>0.00058938</ixx>
-          <ixy>3.6846e-09</ixy>
-          <ixz>-6.3001e-05</ixz>
-          <iyy>0.00054103</iyy>
+          <ixx>0.000589379</ixx>
+          <ixy>3.68459e-09</ixy>
+          <ixz>-6.30008e-05</ixz>
+          <iyy>0.000541032</iyy>
           <iyz>-9.2363e-09</iyz>
-          <izz>8.2462e-05</izz>
+          <izz>8.24623e-05</izz>
         </inertia>
       </inertial>
       <collision name='Tibia_2_collision'>
@@ -478,12 +478,12 @@
       <child>Tibia_2</child>
       <parent>Femur_2</parent>
       <axis>
-        <xyz>-0.707695 0.706518 -0</xyz>
+        <xyz>0.707695 -0.706518 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
-          <velocity>0</velocity>
+          <velocity>5</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -493,17 +493,17 @@
       </axis>
     </joint>
     <link name='Coxa_3'>
-      <pose frame=''>-0.085578 0.080483 -0.005163 -0 0 2.357</pose>
+      <pose frame=''>-0.075112 0.070004 -0.034543 -0 0 2.357</pose>
       <inertial>
-        <pose frame=''>-0 0 -0 0 -0 0</pose>
-        <mass>0.1241</mass>
+        <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
+        <mass>0.124104</mass>
         <inertia>
-          <ixx>8.1827e-05</ixx>
-          <ixy>-1.143e-08</ixy>
+          <ixx>8.18267e-05</ixx>
+          <ixy>-1.14302e-08</ixy>
           <ixz>6.1428e-07</ixz>
-          <iyy>7.2703e-05</iyy>
-          <iyz>2.0053e-08</iyz>
-          <izz>0.00012069</izz>
+          <iyy>7.27029e-05</iyy>
+          <iyz>2.00526e-08</iyz>
+          <izz>0.000120694</izz>
         </inertia>
       </inertial>
       <collision name='Coxa_3_collision'>
@@ -531,8 +531,8 @@
       <axis>
         <xyz>-0 -0 1</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -544,17 +544,17 @@
       </axis>
     </joint>
     <link name='Femur'>
-      <pose frame=''>-0.156215 0.153136 -0.005527 -0 0 2.357</pose>
+      <pose frame=''>-0.100795 0.135804 -0.005543 -0 0 2.357</pose>
       <inertial>
-        <pose frame=''>-0 0 0 0 -0 0</pose>
-        <mass>0.15818</mass>
+        <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
+        <mass>0.158176</mass>
         <inertia>
-          <ixx>8.7287e-05</ixx>
-          <ixy>1.3518e-10</ixy>
-          <ixz>-6.3286e-12</ixz>
-          <iyy>0.00025193</iyy>
-          <iyz>-3.8498e-08</iyz>
-          <izz>0.00032491</izz>
+          <ixx>8.72873e-05</ixx>
+          <ixy>1.35183e-10</ixy>
+          <ixz>-6.32861e-12</ixz>
+          <iyy>0.000251934</iyy>
+          <iyz>-3.84978e-08</iyz>
+          <izz>0.000324907</izz>
         </inertia>
       </inertial>
       <collision name='Femur_collision'>
@@ -580,10 +580,10 @@
       <child>Femur</child>
       <parent>Coxa_3</parent>
       <axis>
-        <xyz>-0.706537 -0.707676 -0</xyz>
+        <xyz>0.706537 0.707676 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
@@ -595,17 +595,17 @@
       </axis>
     </joint>
     <link name='Tibia_3'>
-      <pose frame=''>-0.206284 0.201015 -0.053857 -0 0 2.357</pose>
+      <pose frame=''>-0.193722 0.188423 -0.005543 -0 0 2.357</pose>
       <inertial>
-        <pose frame=''>-0 -0 1e-06 0 -0 0</pose>
-        <mass>0.17087</mass>
+        <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
+        <mass>0.170868</mass>
         <inertia>
-          <ixx>0.00058938</ixx>
+          <ixx>0.000589379</ixx>
           <ixy>3.6838e-09</ixy>
-          <ixz>-6.3001e-05</ixz>
-          <iyy>0.00054103</iyy>
+          <ixz>-6.30008e-05</ixz>
+          <iyy>0.000541032</iyy>
           <iyz>-9.2364e-09</iyz>
-          <izz>8.2462e-05</izz>
+          <izz>8.24623e-05</izz>
         </inertia>
       </inertial>
       <collision name='Tibia_3_collision'>
@@ -631,10 +631,10 @@
       <child>Tibia_3</child>
       <parent>Femur</parent>
       <axis>
-        <xyz>-0.706537 -0.707676 -0</xyz>
+        <xyz>0.706537 0.707676 0</xyz>
         <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
           <effort>0.9</effort>
           <velocity>5</velocity>
         </limit>
