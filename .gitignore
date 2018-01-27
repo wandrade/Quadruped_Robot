@@ -157,3 +157,10 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+
+#############
+## Visual Studio Code
+#############
+
+c_cpp_properties.json
