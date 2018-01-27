@@ -1,0 +1,1 @@
+controller_joint_names: ['Servo_Coxa_1', 'Servo_Femur_1_1', 'Servo_Femur_1_2', 'Servo_Coxa_2', 'Servo_Femur_2_1', 'Servo_Femur_2_2', 'Servo_Coxa_3', 'Servo_Femur_3_1', 'Servo_Femur_3_2', 'Serv_Coxa_4', 'Servo_Femur_4_1', 'Servo_Femur_4_2', ]
