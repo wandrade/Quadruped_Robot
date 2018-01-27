@@ -7,8 +7,8 @@
 for jebediah robot.</p>
     <p> It was created based on Toglefritz Jebediah quadruped found on https://github.com/Toglefritz/Quadruped_Robot.</p>
   </description>
-  <author>me</author>
-  <maintainer email="me2email.com" />
+  <author>Werner Thomassen Andrade</author>
+  <maintainer email="wandrade@ufmg.br" />
   <license>BSD</license>
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roslaunch</build_depend>

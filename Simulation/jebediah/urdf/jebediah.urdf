@@ -4,7 +4,7 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0 0 1"
+        xyz="1.44173913307899E-07 9.5258129717557E-09 1.51352445312836E-07"
         rpy="0 0 0" />
       <mass
         value="0.29736" />
