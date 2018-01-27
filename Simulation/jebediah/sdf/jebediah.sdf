@@ -1,5 +1,7 @@
 <sdf version='1.6'>
   <model name='jebediah'>
+    <self_collide>true</self_collide>
+    <pose frame=''>0 0 0.1677 0 0 0</pose>
     <link name='base_link'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
