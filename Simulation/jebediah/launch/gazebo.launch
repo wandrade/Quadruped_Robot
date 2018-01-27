@@ -10,7 +10,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find jebediah)/urdf/jebediah.urdf -urdf -model jebediah"
+    args="-file $(find jebediah)/sdf/jebediah.sdf -sdf -model jebediah"
     output="screen" />
   <node
     name="fake_joint_calibration"
