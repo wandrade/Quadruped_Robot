@@ -1,6 +1,6 @@
 <launch>
   <include
-    file="$(find gazebo_ros)/launch/empty_world.launch" />
+    file="$(find jebediah)/launch/empty_world.launch" />
   <node
     name="tf_footprint_base"
     pkg="tf"
@@ -10,7 +10,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find jebediah)/sdf/jebediah.sdf -sdf -model jebediah"
+    args="-e dart -file $(find jebediah)/sdf/jebediah.sdf -sdf -model jebediah"
     output="screen" />
   <node
     name="fake_joint_calibration"
