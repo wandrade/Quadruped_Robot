@@ -21,7 +21,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/base_link.STL</uri>
+            <uri>model://jebediah/meshes/base_link_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -30,7 +30,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/base_link.STL</uri>
+            <uri>model://jebediah/meshes/base_link.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -60,7 +60,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -69,7 +69,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -117,7 +117,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -126,7 +126,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -174,7 +174,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -183,7 +183,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -231,7 +231,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -240,7 +240,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -288,7 +288,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -297,7 +297,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -345,7 +345,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -354,7 +354,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -402,7 +402,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -411,7 +411,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -459,7 +459,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -468,7 +468,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -516,7 +516,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -525,7 +525,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -573,7 +573,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -582,7 +582,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.STL</uri>
+            <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -630,7 +630,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -639,7 +639,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.STL</uri>
+            <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -687,7 +687,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -696,7 +696,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.STL</uri>
+            <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
         <material>
