@@ -1,5 +1,7 @@
 <robot
   name="jebediah">
+  <origin
+    xyz="0 0 0.1677"/>
   <link
     name="base_link">
     <inertial>
@@ -22,12 +24,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/base_link.STL" />
+          filename="package://jebediah/meshes/base_link.stl" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -36,7 +38,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/base_link.STL" />
+          filename="package://jebediah/meshes/base_link_collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -62,7 +64,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_1.STL" />
+          filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
       <material
         name="">
@@ -76,7 +78,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_1.STL" />
+          filename="package://jebediah/meshes/Coxa_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -120,7 +122,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur_1.STL" />
+          filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
       <material
         name="">
@@ -134,7 +136,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur_1.STL" />
+          filename="package://jebediah/meshes/Femur_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -178,7 +180,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_1.STL" />
+          filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
       <material
         name="">
@@ -192,7 +194,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_1.STL" />
+          filename="package://jebediah/meshes/Tibia_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -236,7 +238,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_2.STL" />
+          filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
       <material
         name="">
@@ -250,7 +252,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_2.STL" />
+          filename="package://jebediah/meshes/Coxa_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -294,7 +296,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur_2.STL" />
+          filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
       <material
         name="">
@@ -308,7 +310,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur_2.STL" />
+          filename="package://jebediah/meshes/Femur_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -352,7 +354,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_2.STL" />
+          filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
       <material
         name="">
@@ -366,7 +368,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_2.STL" />
+          filename="package://jebediah/meshes/Tibia_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -410,7 +412,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_3.STL" />
+          filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
       <material
         name="">
@@ -424,7 +426,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_3.STL" />
+          filename="package://jebediah/meshes/Coxa_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -468,7 +470,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur.STL" />
+          filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
       <material
         name="">
@@ -482,7 +484,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur.STL" />
+          filename="package://jebediah/meshes/Femur_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -526,7 +528,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_3.STL" />
+          filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
       <material
         name="">
@@ -540,7 +542,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_3.STL" />
+          filename="package://jebediah/meshes/Tibia_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -584,7 +586,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_4.STL" />
+          filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
       <material
         name="">
@@ -598,7 +600,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Coxa_4.STL" />
+          filename="package://jebediah/meshes/Coxa_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -642,7 +644,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur_4.STL" />
+          filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
       <material
         name="">
@@ -656,7 +658,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Femur_4.STL" />
+          filename="package://jebediah/meshes/Femur_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -700,7 +702,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_4.STL" />
+          filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
       <material
         name="">
@@ -714,7 +716,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jebediah/meshes/Tibia_4.STL" />
+          filename="package://jebediah/meshes/Tibia_Collision.stl" />
       </geometry>
     </collision>
   </link>
@@ -735,5 +737,4 @@
       upper="1.4"
       effort="0.9"
       velocity="5" />
-  </joint>
 </robot>
