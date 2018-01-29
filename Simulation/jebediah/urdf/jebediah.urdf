@@ -1,7 +1,5 @@
 <robot
   name="jebediah">
-  <origin
-    xyz="0 0 0.1677"/>
   <link
     name="base_link">
     <inertial>
@@ -69,7 +67,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -127,7 +125,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -243,7 +241,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -301,7 +299,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -417,7 +415,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -475,7 +473,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -591,7 +589,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -649,7 +647,7 @@
       <material
         name="">
         <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+          rgba="0 0 0 1" />
       </material>
     </visual>
     <collision>
@@ -737,4 +735,8 @@
       upper="1.4"
       effort="0.9"
       velocity="5" />
+  </joint>
+  <gazebo>
+    <self_collide>true</self_collide> 
+  </gazebo>
 </robot>
