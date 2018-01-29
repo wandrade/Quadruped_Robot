@@ -1,5 +1,10 @@
+<?xml version="1.0"?>
 <robot
   name="jebediah">
+  <material name="black">
+    <color rgba="0.2 0.2 0.2 1"/>
+  </material>
+  <origin rpy="0 0 0" xyz="0 0 0.1677"/>
   <link
     name="base_link">
     <inertial>
@@ -24,11 +29,7 @@
         <mesh
           filename="package://jebediah/meshes/base_link.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -64,11 +65,7 @@
         <mesh
           filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -122,11 +119,7 @@
         <mesh
           filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -180,11 +173,7 @@
         <mesh
           filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -238,11 +227,7 @@
         <mesh
           filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -296,11 +281,7 @@
         <mesh
           filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -354,11 +335,7 @@
         <mesh
           filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -412,11 +389,7 @@
         <mesh
           filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -470,11 +443,7 @@
         <mesh
           filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -528,11 +497,7 @@
         <mesh
           filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -586,11 +551,7 @@
         <mesh
           filename="package://jebediah/meshes/Coxa.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -644,11 +605,7 @@
         <mesh
           filename="package://jebediah/meshes/Femur.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -702,11 +659,7 @@
         <mesh
           filename="package://jebediah/meshes/Tibia.stl" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
-      </material>
+      <material name="black"/>
     </visual>
     <collision>
       <origin
@@ -737,6 +690,16 @@
       velocity="5" />
   </joint>
   <gazebo>
-    <self_collide>true</self_collide> 
+    <self_collide>true</self_collide>
+    <plugin name="imu_controller" filename="libgazebo_ros_imu.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate> 
+      <bodyName>base_link</bodyName>
+      <topicName>imu_data</topicName>
+      <gaussianNoise>2.89e-08</gaussianNoise>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+      <interface:position name="imu_position"/>
+    </plugin>
   </gazebo>
 </robot>
