@@ -31,12 +31,6 @@
             <uri>model://jebediah/meshes/base_link.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <link name='Coxa_4'>
@@ -70,12 +64,6 @@
             <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Serv_Coxa_4' type='revolute'>
@@ -127,12 +115,6 @@
             <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_4_1' type='revolute'>
@@ -184,12 +166,6 @@
             <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_4_2' type='revolute'>
@@ -232,12 +208,6 @@
             <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </collision>
       <visual name='Coxa_1_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -247,12 +217,6 @@
             <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Coxa_1' type='revolute'>
@@ -304,12 +268,6 @@
             <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_1_1' type='revolute'>
@@ -361,12 +319,6 @@
             <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_1_2' type='revolute'>
@@ -418,12 +370,6 @@
             <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Coxa_2' type='revolute'>
@@ -475,12 +421,6 @@
             <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_2_1' type='revolute'>
@@ -532,12 +472,6 @@
             <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_2_2' type='revolute'>
@@ -589,12 +523,6 @@
             <uri>model://jebediah/meshes/Coxa.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Coxa_3' type='revolute'>
@@ -646,12 +574,6 @@
             <uri>model://jebediah/meshes/Femur.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_3_1' type='revolute'>
@@ -703,12 +625,6 @@
             <uri>model://jebediah/meshes/Tibia.stl</uri>
           </mesh>
         </geometry>
-        <material>
-          <ambient>0.2 0.2 0.2 1</ambient>
-          <diffuse>0.2 0.2 0.2 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0 0 0 0</emissive>
-        </material>
       </visual>
     </link>
     <joint name='Servo_Femur_3_2' type='revolute'>
@@ -735,11 +651,14 @@
       <alwaysOn>true</alwaysOn>
       <updateRate>50.0</updateRate>
       <bodyName>base_link</bodyName>
-      <topicName>imu_data</topicName>
+      <topicName>jebediah/imu_data</topicName>
       <gaussianNoise>2.89e-08</gaussianNoise>
       <xyzOffsets>0 0 0</xyzOffsets>
       <rpyOffsets>0 0 0</rpyOffsets>
       <interface:position name='imu_position'/>
+    </plugin>
+    <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+      <robotNamespace>/jebediah</robotNamespace>
     </plugin>
     <pose frame=''>0 0 0.1677 0 -0 0</pose>
   </model>

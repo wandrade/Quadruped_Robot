@@ -695,11 +695,14 @@
       <alwaysOn>true</alwaysOn>
       <updateRate>50.0</updateRate> 
       <bodyName>base_link</bodyName>
-      <topicName>imu_data</topicName>
+      <topicName>jebediah/imu_data</topicName>
       <gaussianNoise>2.89e-08</gaussianNoise>
       <xyzOffsets>0 0 0</xyzOffsets>
       <rpyOffsets>0 0 0</rpyOffsets>
       <interface:position name="imu_position"/>
+    </plugin>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/jebediah</robotNamespace>
     </plugin>
   </gazebo>
 </robot>
