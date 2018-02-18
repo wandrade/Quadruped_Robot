@@ -191,7 +191,7 @@
           <topic>__default_topic__</topic>
         </contact>
         <plugin name='tibia_1_bumper' filename='libgazebo_ros_bumper.so'>
-          <bumperTopicName>tibia_1_conctact_sensor</bumperTopicName>
+          <bumperTopicName>jebediah/tibia_1_conctact_sensor</bumperTopicName>
           <frameName>tibia_1</frameName>
         </plugin>
       </sensor>
@@ -372,7 +372,7 @@
           <topic>__default_topic__</topic>
         </contact>
         <plugin name='tibia_2_bumper' filename='libgazebo_ros_bumper.so'>
-          <bumperTopicName>tibia_2_conctact_sensor</bumperTopicName>
+          <bumperTopicName>jebediah/tibia_2_conctact_sensor</bumperTopicName>
           <frameName>tibia_2</frameName>
         </plugin>
       </sensor>
@@ -553,7 +553,7 @@
           <topic>__default_topic__</topic>
         </contact>
         <plugin name='tibia_3_bumper' filename='libgazebo_ros_bumper.so'>
-          <bumperTopicName>tibia_3_conctact_sensor</bumperTopicName>
+          <bumperTopicName>jebediah/tibia_3_conctact_sensor</bumperTopicName>
           <frameName>tibia_3</frameName>
         </plugin>
       </sensor>
@@ -734,7 +734,7 @@
           <topic>__default_topic__</topic>
         </contact>
         <plugin name='tibia_4_bumper' filename='libgazebo_ros_bumper.so'>
-          <bumperTopicName>tibia_4_conctact_sensor</bumperTopicName>
+          <bumperTopicName>jebediah/tibia_4_conctact_sensor</bumperTopicName>
           <frameName>tibia_4</frameName>
         </plugin>
       </sensor>
