@@ -33,160 +33,7 @@
         </geometry>
       </visual>
     </link>
-    <link name='Coxa_4'>
-      <pose frame=''>-0.075112 -0.069996 -0.034543 0 0 -2.3554</pose>
-      <inertial>
-        <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
-        <mass>0.124104</mass>
-        <inertia>
-          <ixx>8.18267e-05</ixx>
-          <ixy>-1.14318e-08</ixy>
-          <ixz>6.1428e-07</ixz>
-          <iyy>7.27029e-05</iyy>
-          <iyz>2.00528e-08</iyz>
-          <izz>0.000120694</izz>
-        </inertia>
-      </inertial>
-      <collision name='Coxa_4_collision'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name='Coxa_4_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.stl</uri>
-          </mesh>
-        </geometry>
-      </visual>
-    </link>
-    <joint name='Serv_Coxa_4' type='revolute'>
-      <child>Coxa_4</child>
-      <parent>base_link</parent>
-      <axis>
-        <xyz>-0 -0 1</xyz>
-        <limit>
-          <lower>-1.4</lower>
-          <upper>1.4</upper>
-          <effort>0.9</effort>
-          <velocity>5</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <link name='Femur_4'>
-      <pose frame=''>-0.140912 -0.095678 -0.005543 0 0 -2.3554</pose>
-      <inertial>
-        <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
-        <mass>0.158176</mass>
-        <inertia>
-          <ixx>8.72873e-05</ixx>
-          <ixy>1.35179e-10</ixy>
-          <ixz>-6.32899e-12</ixz>
-          <iyy>0.000251934</iyy>
-          <iyz>-3.84978e-08</iyz>
-          <izz>0.000324907</izz>
-        </inertia>
-      </inertial>
-      <collision name='Femur_4_collision'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name='Femur_4_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.stl</uri>
-          </mesh>
-        </geometry>
-      </visual>
-    </link>
-    <joint name='Servo_Femur_4_1' type='revolute'>
-      <child>Femur_4</child>
-      <parent>Coxa_4</parent>
-      <axis>
-        <xyz>0.707668 -0.706545 0</xyz>
-        <limit>
-          <lower>-1.4</lower>
-          <upper>1.4</upper>
-          <effort>0.9</effort>
-          <velocity>5</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <link name='Tibia_4'>
-      <pose frame=''>-0.193532 -0.188605 -0.005543 0 0 -2.3554</pose>
-      <inertial>
-        <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
-        <mass>0.170868</mass>
-        <inertia>
-          <ixx>0.000589379</ixx>
-          <ixy>3.67753e-09</ixy>
-          <ixz>-6.30008e-05</ixz>
-          <iyy>0.000541032</iyy>
-          <iyz>-9.23625e-09</iyz>
-          <izz>8.24623e-05</izz>
-        </inertia>
-      </inertial>
-      <collision name='Tibia_4_collision'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name='Tibia_4_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.stl</uri>
-          </mesh>
-        </geometry>
-      </visual>
-    </link>
-    <joint name='Servo_Femur_4_2' type='revolute'>
-      <child>Tibia_4</child>
-      <parent>Femur_4</parent>
-      <axis>
-        <xyz>0.707668 -0.706545 0</xyz>
-        <limit>
-          <lower>-1.4</lower>
-          <upper>1.4</upper>
-          <effort>0.9</effort>
-          <velocity>5</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <link name='Coxa_1'>
+    <link name='coxa_1'>
       <pose frame=''>0.064888 -0.069996 -0.034543 0 -0 -0.78456</pose>
       <inertial>
         <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
@@ -200,27 +47,27 @@
           <izz>0.000120694</izz>
         </inertia>
       </inertial>
-      <collision name='Coxa_1_collision'>
+      <collision name='coxa_1_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
+            <uri>model://jebediah/meshes/coxa_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='Coxa_1_visual'>
+      <visual name='coxa_1_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.stl</uri>
+            <uri>model://jebediah/meshes/coxa.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='Servo_Coxa_1' type='revolute'>
-      <child>Coxa_1</child>
+    <joint name='servo_coxa_1' type='revolute'>
+      <child>coxa_1</child>
       <parent>base_link</parent>
       <axis>
         <xyz>-0 0 1</xyz>
@@ -237,7 +84,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Femur_1'>
+    <link name='femur_1'>
       <pose frame=''>0.090573 -0.135795 -0.005543 0 -0 -0.78456</pose>
       <inertial>
         <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
@@ -251,28 +98,28 @@
           <izz>0.000324907</izz>
         </inertia>
       </inertial>
-      <collision name='Femur_1_collision'>
+      <collision name='femur_1_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
+            <uri>model://jebediah/meshes/femur_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='Femur_1_visual'>
+      <visual name='femur_1_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.stl</uri>
+            <uri>model://jebediah/meshes/femur.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='Servo_Femur_1_1' type='revolute'>
-      <child>Femur_1</child>
-      <parent>Coxa_1</parent>
+    <joint name='servo_femur_1_1' type='revolute'>
+      <child>femur_1</child>
+      <parent>coxa_1</parent>
       <axis>
         <xyz>0.706514 0.707699 0</xyz>
         <limit>
@@ -288,7 +135,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Tibia_1'>
+    <link name='tibia_1'>
       <pose frame=''>0.183502 -0.188411 -0.005543 0 -0 -0.78456</pose>
       <inertial>
         <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
@@ -302,28 +149,56 @@
           <izz>8.24623e-05</izz>
         </inertia>
       </inertial>
-      <collision name='Tibia_1_collision'>
+      <collision name='tibia_1_col_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
+            <uri>model://jebediah/meshes/tibia_collision.stl</uri>
           </mesh>
         </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
-      <visual name='Tibia_1_visual'>
+      <visual name='tibia_1_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.stl</uri>
+            <uri>model://jebediah/meshes/tibia.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
       </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <sensor name='tibia_1_conctact_sensor' type='contact'>
+        <always_on>1</always_on>
+        <update_rate>50</update_rate>
+        <contact>
+          <collision>tibia_1_col_collision</collision>
+          <topic>__default_topic__</topic>
+        </contact>
+        <plugin name='tibia_1_bumper' filename='libgazebo_ros_bumper.so'>
+          <bumperTopicName>tibia_1_conctact_sensor</bumperTopicName>
+          <frameName>tibia_1</frameName>
+        </plugin>
+      </sensor>
     </link>
-    <joint name='Servo_Femur_1_2' type='revolute'>
-      <child>Tibia_1</child>
-      <parent>Femur_1</parent>
+    <joint name='servo_femur_1_2' type='revolute'>
+      <child>tibia_1</child>
+      <parent>femur_1</parent>
       <axis>
         <xyz>0.706514 0.707699 0</xyz>
         <limit>
@@ -339,7 +214,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Coxa_2'>
+    <link name='coxa_2'>
       <pose frame=''>0.064888 0.070004 -0.034543 -0 -0 0.78623</pose>
       <inertial>
         <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
@@ -353,27 +228,27 @@
           <izz>0.000120694</izz>
         </inertia>
       </inertial>
-      <collision name='Coxa_2_collision'>
+      <collision name='coxa_2_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
+            <uri>model://jebediah/meshes/coxa_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='Coxa_2_visual'>
+      <visual name='coxa_2_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.stl</uri>
+            <uri>model://jebediah/meshes/coxa.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='Servo_Coxa_2' type='revolute'>
-      <child>Coxa_2</child>
+    <joint name='servo_coxa_2' type='revolute'>
+      <child>coxa_2</child>
       <parent>base_link</parent>
       <axis>
         <xyz>-0 0 1</xyz>
@@ -390,7 +265,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Femur_2'>
+    <link name='femur_2'>
       <pose frame=''>0.130687 0.095689 -0.005543 -0 -0 0.78623</pose>
       <inertial>
         <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
@@ -404,28 +279,28 @@
           <izz>0.000324907</izz>
         </inertia>
       </inertial>
-      <collision name='Femur_2_collision'>
+      <collision name='femur_2_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
+            <uri>model://jebediah/meshes/femur_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='Femur_2_visual'>
+      <visual name='femur_2_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.stl</uri>
+            <uri>model://jebediah/meshes/femur.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='Servo_Femur_2_1' type='revolute'>
-      <child>Femur_2</child>
-      <parent>Coxa_2</parent>
+    <joint name='servo_femur_2_1' type='revolute'>
+      <child>femur_2</child>
+      <parent>coxa_2</parent>
       <axis>
         <xyz>0.707695 -0.706518 0</xyz>
         <limit>
@@ -441,7 +316,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Tibia_2'>
+    <link name='tibia_2'>
       <pose frame=''>0.183304 0.188617 -0.005543 -0 -0 0.78623</pose>
       <inertial>
         <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
@@ -455,28 +330,56 @@
           <izz>8.24623e-05</izz>
         </inertia>
       </inertial>
-      <collision name='Tibia_2_collision'>
+      <collision name='tibia_2_col_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
+            <uri>model://jebediah/meshes/tibia_collision.stl</uri>
           </mesh>
         </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
-      <visual name='Tibia_2_visual'>
+      <visual name='tibia_2_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.stl</uri>
+            <uri>model://jebediah/meshes/tibia.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
       </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <sensor name='tibia_2_conctact_sensor' type='contact'>
+        <always_on>1</always_on>
+        <update_rate>50</update_rate>
+        <contact>
+          <collision>tibia_2_col_collision</collision>
+          <topic>__default_topic__</topic>
+        </contact>
+        <plugin name='tibia_2_bumper' filename='libgazebo_ros_bumper.so'>
+          <bumperTopicName>tibia_2_conctact_sensor</bumperTopicName>
+          <frameName>tibia_2</frameName>
+        </plugin>
+      </sensor>
     </link>
-    <joint name='Servo_Femur_2_2' type='revolute'>
-      <child>Tibia_2</child>
-      <parent>Femur_2</parent>
+    <joint name='servo_femur_2_2' type='revolute'>
+      <child>tibia_2</child>
+      <parent>femur_2</parent>
       <axis>
         <xyz>0.707695 -0.706518 0</xyz>
         <limit>
@@ -492,7 +395,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Coxa_3'>
+    <link name='coxa_3'>
       <pose frame=''>-0.075112 0.070004 -0.034543 -0 0 2.357</pose>
       <inertial>
         <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
@@ -506,27 +409,27 @@
           <izz>0.000120694</izz>
         </inertia>
       </inertial>
-      <collision name='Coxa_3_collision'>
+      <collision name='coxa_3_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa_Collision.stl</uri>
+            <uri>model://jebediah/meshes/coxa_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='Coxa_3_visual'>
+      <visual name='coxa_3_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Coxa.stl</uri>
+            <uri>model://jebediah/meshes/coxa.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='Servo_Coxa_3' type='revolute'>
-      <child>Coxa_3</child>
+    <joint name='servo_coxa_3' type='revolute'>
+      <child>coxa_3</child>
       <parent>base_link</parent>
       <axis>
         <xyz>-0 -0 1</xyz>
@@ -543,7 +446,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Femur'>
+    <link name='femur'>
       <pose frame=''>-0.100795 0.135804 -0.005543 -0 0 2.357</pose>
       <inertial>
         <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
@@ -557,28 +460,28 @@
           <izz>0.000324907</izz>
         </inertia>
       </inertial>
-      <collision name='Femur_collision'>
+      <collision name='femur_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur_Collision.stl</uri>
+            <uri>model://jebediah/meshes/femur_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='Femur_visual'>
+      <visual name='femur_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Femur.stl</uri>
+            <uri>model://jebediah/meshes/femur.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='Servo_Femur_3_1' type='revolute'>
-      <child>Femur</child>
-      <parent>Coxa_3</parent>
+    <joint name='servo_femur_3_1' type='revolute'>
+      <child>femur</child>
+      <parent>coxa_3</parent>
       <axis>
         <xyz>0.706537 0.707676 0</xyz>
         <limit>
@@ -594,7 +497,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='Tibia_3'>
+    <link name='tibia_3'>
       <pose frame=''>-0.193722 0.188423 -0.005543 -0 0 2.357</pose>
       <inertial>
         <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
@@ -608,30 +511,239 @@
           <izz>8.24623e-05</izz>
         </inertia>
       </inertial>
-      <collision name='Tibia_3_collision'>
+      <collision name='tibia_3_col_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia_Collision.stl</uri>
+            <uri>model://jebediah/meshes/tibia_collision.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='tibia_3_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://jebediah/meshes/tibia.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <sensor name='tibia_3_conctact_sensor' type='contact'>
+        <always_on>1</always_on>
+        <update_rate>50</update_rate>
+        <contact>
+          <collision>tibia_3_col_collision</collision>
+          <topic>__default_topic__</topic>
+        </contact>
+        <plugin name='tibia_3_bumper' filename='libgazebo_ros_bumper.so'>
+          <bumperTopicName>tibia_3_conctact_sensor</bumperTopicName>
+          <frameName>tibia_3</frameName>
+        </plugin>
+      </sensor>
+    </link>
+    <joint name='servo_femur_3_2' type='revolute'>
+      <child>tibia_3</child>
+      <parent>femur</parent>
+      <axis>
+        <xyz>0.706537 0.707676 0</xyz>
+        <limit>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
+          <effort>0.9</effort>
+          <velocity>5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='coxa_4'>
+      <pose frame=''>-0.075112 -0.069996 -0.034543 0 0 -2.3554</pose>
+      <inertial>
+        <pose frame=''>0.01481 -2.2e-05 0.029381 0 -0 0</pose>
+        <mass>0.124104</mass>
+        <inertia>
+          <ixx>8.18267e-05</ixx>
+          <ixy>-1.14318e-08</ixy>
+          <ixz>6.1428e-07</ixz>
+          <iyy>7.27029e-05</iyy>
+          <iyz>2.00528e-08</iyz>
+          <izz>0.000120694</izz>
+        </inertia>
+      </inertial>
+      <collision name='coxa_4_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://jebediah/meshes/coxa_collision.stl</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='Tibia_3_visual'>
+      <visual name='coxa_4_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://jebediah/meshes/Tibia.stl</uri>
+            <uri>model://jebediah/meshes/coxa.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='Servo_Femur_3_2' type='revolute'>
-      <child>Tibia_3</child>
-      <parent>Femur</parent>
+    <joint name='servo_coxa_4' type='revolute'>
+      <child>coxa_4</child>
+      <parent>base_link</parent>
       <axis>
-        <xyz>0.706537 0.707676 0</xyz>
+        <xyz>-0 -0 1</xyz>
+        <limit>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
+          <effort>0.9</effort>
+          <velocity>5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='femur_4'>
+      <pose frame=''>-0.140912 -0.095678 -0.005543 0 0 -2.3554</pose>
+      <inertial>
+        <pose frame=''>0.051468 0.026889 1.6e-05 0 -0 0</pose>
+        <mass>0.158176</mass>
+        <inertia>
+          <ixx>8.72873e-05</ixx>
+          <ixy>1.35179e-10</ixy>
+          <ixz>-6.32899e-12</ixz>
+          <iyy>0.000251934</iyy>
+          <iyz>-3.84978e-08</iyz>
+          <izz>0.000324907</izz>
+        </inertia>
+      </inertial>
+      <collision name='femur_4_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://jebediah/meshes/femur_collision.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='femur_4_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://jebediah/meshes/femur.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='servo_femur_4_1' type='revolute'>
+      <child>femur_4</child>
+      <parent>coxa_4</parent>
+      <axis>
+        <xyz>0.707668 -0.706545 0</xyz>
+        <limit>
+          <lower>-1.4</lower>
+          <upper>1.4</upper>
+          <effort>0.9</effort>
+          <velocity>5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='tibia_4'>
+      <pose frame=''>-0.193532 -0.188605 -0.005543 0 0 -2.3554</pose>
+      <inertial>
+        <pose frame=''>0.017792 -3.6e-05 -0.048313 0 -0 0</pose>
+        <mass>0.170868</mass>
+        <inertia>
+          <ixx>0.000589379</ixx>
+          <ixy>3.67753e-09</ixy>
+          <ixz>-6.30008e-05</ixz>
+          <iyy>0.000541032</iyy>
+          <iyz>-9.23625e-09</iyz>
+          <izz>8.24623e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='tibia_4_col_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://jebediah/meshes/tibia_collision.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='tibia_4_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://jebediah/meshes/tibia.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <sensor name='tibia_4_conctact_sensor' type='contact'>
+        <always_on>1</always_on>
+        <update_rate>50</update_rate>
+        <contact>
+          <collision>tibia_4_col_collision</collision>
+          <topic>__default_topic__</topic>
+        </contact>
+        <plugin name='tibia_4_bumper' filename='libgazebo_ros_bumper.so'>
+          <bumperTopicName>tibia_4_conctact_sensor</bumperTopicName>
+          <frameName>tibia_4</frameName>
+        </plugin>
+      </sensor>
+    </link>
+    <joint name='servo_femur_4_2' type='revolute'>
+      <child>tibia_4</child>
+      <parent>femur_4</parent>
+      <axis>
+        <xyz>0.707668 -0.706545 0</xyz>
         <limit>
           <lower>-1.4</lower>
           <upper>1.4</upper>
@@ -647,6 +759,9 @@
     </joint>
     <static>0</static>
     <self_collide>1</self_collide>
+    <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+      <robotNamespace>/jebediah</robotNamespace>
+    </plugin>
     <plugin name='imu_controller' filename='libgazebo_ros_imu.so'>
       <alwaysOn>true</alwaysOn>
       <updateRate>50.0</updateRate>
@@ -656,9 +771,6 @@
       <xyzOffsets>0 0 0</xyzOffsets>
       <rpyOffsets>0 0 0</rpyOffsets>
       <interface:position name='imu_position'/>
-    </plugin>
-    <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
-      <robotNamespace>/jebediah</robotNamespace>
     </plugin>
     <pose frame=''>0 0 0.1677 0 -0 0</pose>
   </model>

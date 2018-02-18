@@ -175,7 +175,7 @@
       </geometry>
       <material name="black"/>
     </visual>
-    <collision>
+    <collision name="tibia_1_col">
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -337,7 +337,7 @@
       </geometry>
       <material name="black"/>
     </visual>
-    <collision>
+    <collision name="tibia_2_col">
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -499,7 +499,7 @@
       </geometry>
       <material name="black"/>
     </visual>
-    <collision>
+    <collision name="tibia_3_col">
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -564,7 +564,7 @@
     </collision>
   </link>
   <joint
-    name="serv_coxa_4"
+    name="servo_coxa_4"
     type="revolute">
     <origin
       xyz="-0.075112 -0.069996 -0.034543"
@@ -655,13 +655,13 @@
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
-      <geometry>
+      <geometry name="tibia_4_col">
         <mesh
           filename="package://jebediah/meshes/tibia.stl" />
       </geometry>
       <material name="black"/>
     </visual>
-    <collision>
+    <collision name="tibia_4_col">
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
@@ -689,6 +689,8 @@
       effort="0.9"
       velocity="5" />
   </joint>
+
+<!-- ====================== IMU ======================= -->
   <gazebo>
     <self_collide>true</self_collide>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
@@ -705,19 +707,72 @@
       <interface:position name="imu_position"/> 
     </plugin>
   </gazebo>
-
-  <transmission name="tran_servo_coxa_1">
+<!-- =================== Collision ==================== -->
+  <gazebo reference="tibia_1">
+    <sensor name="tibia_1_conctact_sensor" type="contact">
+      <always_on>true</always_on>
+      <update_rate>50</update_rate>
+      <contact>
+        <collision>tibia_1_col_collision</collision>
+      </contact>
+      <plugin name="tibia_1_bumper" filename="libgazebo_ros_bumper.so">
+        <bumperTopicName>tibia_1_conctact_sensor</bumperTopicName>
+        <frameName>tibia_1</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="tibia_2">
+    <sensor name="tibia_2_conctact_sensor" type="contact">
+      <always_on>true</always_on>
+      <update_rate>50</update_rate>
+      <contact>
+        <collision>tibia_2_col_collision</collision>
+      </contact>
+      <plugin name="tibia_2_bumper" filename="libgazebo_ros_bumper.so">
+        <bumperTopicName>tibia_2_conctact_sensor</bumperTopicName>
+        <frameName>tibia_2</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="tibia_3">
+    <sensor name="tibia_3_conctact_sensor" type="contact">
+      <always_on>true</always_on>
+      <update_rate>50</update_rate>
+      <contact>
+        <collision>tibia_3_col_collision</collision>
+      </contact>
+      <plugin name="tibia_3_bumper" filename="libgazebo_ros_bumper.so">
+        <bumperTopicName>tibia_3_conctact_sensor</bumperTopicName>
+        <frameName>tibia_3</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="tibia_4">
+    <sensor name="tibia_4_conctact_sensor" type="contact">
+      <always_on>true</always_on>
+      <update_rate>50</update_rate>
+      <contact>
+        <collision>tibia_4_col_collision</collision>
+      </contact>
+      <plugin name="tibia_4_bumper" filename="libgazebo_ros_bumper.so">
+        <bumperTopicName>tibia_4_conctact_sensor</bumperTopicName>
+        <frameName>tibia_4</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+<!-- =============== LEG 1 transmission =============== -->
+  <transmission name="coxa_1">
     <type>transmission_interface/simpletransmission</type>
     <joint name="servo_coxa_1">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
-    <actuator name="motor1_servo_coxa_1">
+    <actuator name="motor_servo_coxa_1">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
 
-  <transmission name="tran_servo_femur_1_1">
+  <transmission name="femur_1">
     <type>transmission_interface/simpletransmission</type>
     <joint name="servo_femur_1_1">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -728,7 +783,7 @@
     </actuator>
   </transmission>
 
-  <transmission name="tran_servo_femur_1_2">
+  <transmission name="tibia_1">
     <type>transmission_interface/simpletransmission</type>
     <joint name="servo_femur_1_2">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -738,5 +793,104 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
+<!-- =============== LEG 2 transmission =============== -->
+  <transmission name="coxa_2">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_coxa_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_coxa_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
 
+  <transmission name="femur_2">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_femur_2_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_femur_2_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tibia_2">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_femur_2_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_femur_2_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+<!-- =============== LEG 3 transmission =============== -->
+  <transmission name="coxa_3">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_coxa_3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_coxa_3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="femur_3">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_femur_3_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_femur_3_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tibia_3">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_femur_3_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_femur_3_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<!-- =============== LEG 4 transmission =============== -->
+  <transmission name="coxa_4">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_coxa_4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_coxa_4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="femur_4">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_femur_4_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_femur_4_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tibia_4">
+    <type>transmission_interface/simpletransmission</type>
+    <joint name="servo_femur_4_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_servo_femur_4_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
 </robot>
