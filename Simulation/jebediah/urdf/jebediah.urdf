@@ -7,20 +7,6 @@
   <origin rpy="0 0 0" xyz="0 0 0.1677"/>
   <link
     name="base_link">
-    <inertial>
-      <origin
-        xyz="1.44173913307899E-07 9.5258129717557E-09 1.51352445312836E-07"
-        rpy="0 0 0" />
-      <mass
-        value="0.297355206086086" />
-      <inertia
-        ixx="0.00102327912793897"
-        ixy="-1.0923296250537E-06"
-        ixz="-1.70446477679888E-05"
-        iyy="0.00112581981927501"
-        iyz="-2.26628873195509E-07"
-        izz="0.00147666342611158" />
-    </inertial>
     <visual>
       <origin
         xyz="0 0 0"
@@ -41,6 +27,60 @@
       </geometry>
     </collision>
   </link>
+  <!-- Dummy link with innertia -->
+  <link
+    name="base_link_inertia">
+    <inertial>
+      <origin
+        xyz="1.44173913307899E-07 9.5258129717557E-09 1.51352445312836E-07"
+        rpy="0 0 0" />
+      <!-- 
+      Power bank: 315g
+      Body: 297g
+      Rpi: 42g
+      Others: 150g 
+      -->
+      <mass
+        value="0.804" />
+      <inertia
+        ixx="0.00102327912793897"
+        ixy="-1.0923296250537E-06"
+        ixz="-1.70446477679888E-05"
+        iyy="0.00112581981927501"
+        iyz="-2.26628873195509E-07"
+        izz="0.00147666342611158" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.02 0.02 0.02"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.02 0.02 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="body_inertia_link"
+    type="fixed">
+    <origin
+      xyz="1.44173913307899E-07 9.5258129717557E-09 1.51352445312836E-07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_link_inertia" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <!-- End of dummy -->
   <link
     name="coxa_1">
     <inertial>
@@ -692,7 +732,7 @@
 
 <!-- ====================== IMU ======================= -->
   <gazebo>
-    <self_collide>true</self_collide>
+    <!-- <self_collide>true</self_collide> -->
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/jebediah</robotNamespace>
     </plugin>
