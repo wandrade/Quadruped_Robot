@@ -732,7 +732,7 @@
 
 <!-- ====================== IMU ======================= -->
   <gazebo>
-    <!-- <self_collide>true</self_collide> -->
+    <self_collide>true</self_collide>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/jebediah</robotNamespace>
     </plugin>
