@@ -4,7 +4,7 @@
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.297355</mass>
+        <mass>0.804</mass>
         <inertia>
           <ixx>0.00102328</ixx>
           <ixy>-1.09233e-06</ixy>
@@ -23,6 +23,14 @@
           </mesh>
         </geometry>
       </collision>
+      <collision name='base_link_inertia_collision_1'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.02</size>
+          </box>
+        </geometry>
+      </collision>
       <visual name='base_link_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
@@ -30,6 +38,14 @@
             <scale>1 1 1</scale>
             <uri>model://jebediah/meshes/base_link.stl</uri>
           </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_inertia_visual_1'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.02</size>
+          </box>
         </geometry>
       </visual>
     </link>
@@ -767,7 +783,7 @@
       <updateRate>50.0</updateRate>
       <bodyName>base_link</bodyName>
       <topicName>jebediah/imu_data</topicName>
-      <gaussianNoise>2.89e-08</gaussianNoise>
+      <gaussianNoise>0.034</gaussianNoise>
       <xyzOffsets>0 0 0</xyzOffsets>
       <rpyOffsets>0 0 0</rpyOffsets>
       <interface:position name='imu_position'/>
