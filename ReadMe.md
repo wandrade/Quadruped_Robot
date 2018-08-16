@@ -1,4 +1,7 @@
 # Jebediah the Quadruped Robot
+## Configuring for launch file
+mkdir -p ~/.gazebo/models
+ln -s ~/Quadruped_Robot/Simulation/jebediah ~/.gazebo/models/.
 
 ## Project Description
 
