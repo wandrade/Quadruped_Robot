@@ -1,7 +1,7 @@
 <launch>
   <param name="robot_description" textfile="$(find jebediah)/urdf/jebediah.urdf"/>
   <include
-    file="$(find jebediah)/maps/tilted_map_5.launch" />
+    file="$(find jebediah)/worlds/tilted_map_5.launch" />
   <node
     name="tf_footprint_base"
     pkg="tf"
