@@ -11,7 +11,7 @@
        launch files, but it does nothing. -->
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="physics" default="dart"/>
+  <arg name="physics" default="ode"/>
   <arg name="verbose" default="true"/>
   <arg name="world_name" default="$(find jebediah)/worlds/tilted_5_deg.world"/>
   <arg name="respawn_gazebo" default="false"/>
