@@ -88,7 +88,7 @@
     <model name='5degrees'>
       <link name='link_3'>
         <inertial>
-          <mass>1</mass>
+          <mass>99</mass>
           <inertia>
             <ixx>0.166667</ixx>
             <ixy>0</ixy>
@@ -108,7 +108,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/werner/catkin_ws/src/jebediah/meshes/5m.stl</uri>
+              <uri>/home/werner/catkin_ws/src/jebediah/meshes/15m.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -121,10 +121,10 @@
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
-            <ambient>0.6 0.2 0.8 1</ambient>
-            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <ambient>0.2 0.1 0.9 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
             <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0.1 0.1 0.1 1</emissive>
+            <emissive>0 0 0 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -135,15 +135,15 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/werner/catkin_ws/src/jebediah/meshes/5m.stl</uri>
+              <uri>/home/werner/catkin_ws/src/jebediah/meshes/15m.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <surface>
             <friction>
               <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
+                <mu>20</mu>
+                <mu2>21</mu2>
                 <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
@@ -191,18 +191,18 @@
       <pose frame=''>-1.5 -1.5 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>126 620000000</sim_time>
-      <real_time>127 457411652</real_time>
-      <wall_time>1539370531 556202642</wall_time>
-      <iterations>126620</iterations>
+      <sim_time>162 345000000</sim_time>
+      <real_time>35 831280332</real_time>
+      <wall_time>1539375693 605812960</wall_time>
+      <iterations>35725</iterations>
       <model name='5degrees'>
-        <pose frame=''>-1.5 -1.5 0 0 -0 0</pose>
+        <pose frame=''>-1.5 -1.5 -1e-05 3e-06 -3e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='link_3'>
-          <pose frame=''>-1.5 -1.5 0 0 -0 0</pose>
+          <pose frame=''>-1.5 -1.5 -1e-05 3e-06 -3e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -970.2 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -221,7 +221,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>6.60837 -3.54541 3.43824 0 0.415321 2.64917</pose>
+        <pose frame=''>1.54729 -4.72759 2.49272 0 0.435321 1.88918</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
